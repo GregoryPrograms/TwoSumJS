@@ -26,7 +26,7 @@ To reduce code complexity, I recognized that the value of the carryover can alwa
 I solved this with an `if` statement that checked if both linked lists hadn't reached the end yet. When one did, the respective `else if` statement checks if one of the linked lists hasn't reached the end, and if so,  
 I had it begin a new recursive function, where it only summed the carryover and the remaining list's node.  
   
--If both lists ended but still had a carryover value, I needed to extend the list to add the carryover as a final value.  
+- If both lists ended but still had a carryover value, I needed to extend the list to add the carryover as a final value.  
 For this, I just added another `else if` to both recursive functions - so if the lists had reached their ends, I checked if the carryover had a nonzero value. 
 If so, I created a new node, set the value to 1, and set it as the solution list's next node. 
 
